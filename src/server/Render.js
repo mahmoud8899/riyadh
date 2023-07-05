@@ -28,7 +28,7 @@ const helmet = Helmet.renderStatic()
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 <link rel="icon" href=${Log} />
-<meta name="google-site-verification" content="nudTrOck7CCX6fQdknp6WZMOE27dUN_w89Dm5zcmhFM" />
+<meta name="google-site-verification" content="s2_f7JoqWDSfvLos6Lnm3BzvREIFuszd8t2gldVPK_M" />
 ${helmet.title.toString()}
 ${helmet.meta.toString()}
 ${helmet.link.toString()}
