@@ -1,0 +1,20 @@
+version: '3'
+services:
+   node-app:
+    container_name: Services_riyadh
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - "4004:4004"
+    environment:
+    - DOCKER_DEFAULT_PLATFORM=linux/amd64
+    - PORT=4004
+  #  nginx:
+  #   image: nginx:stable-alpine
+  #   ports:
+  #   - "80:80"
+  #   volumes:
+  #     - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+  #   depends_on:
+  #     - node-app
