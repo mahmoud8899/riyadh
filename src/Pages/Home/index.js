@@ -1,16 +1,11 @@
 import React, { Fragment } from 'react'
 import Services from './Services'
-import LastWorking from './LastWorking'
-import TheMpas from './TheMpas'
 import FirstSlider from './Slider'
 import TheAboutUs from './AboutUs'
 import MetaDecorator from '../Screen/Title/index'
-import { PageTitle, TheName } from '../data/response'
-import MyImage from '../Screen/Images'
-import Mok from '../../Icons/mok/1.jpeg'
-import TheCalling from '../Screen/Calling'
-import Airconditioner from './Airconditioner'
-import TheTransfer from './Transfer'
+import { HomeSlider, PageTitle, TheName } from '../data/response'
+import TheCalling from '../Screen/Calling/index'
+
 
 export default function Home() {
 
@@ -66,6 +61,12 @@ export default function Home() {
                 description={PageTitle.des}
                 imageUrl={PageTitle.image}
                 imageAlt={PageTitle.title}
+            />
+
+            <TheCalling  
+            TelefonNumbe={HomeSlider.telefon}
+            Title={HomeSlider.title}
+            ThewhatApp={HomeSlider.whatApp}
             />
 
             <Home />
