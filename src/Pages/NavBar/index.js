@@ -36,19 +36,22 @@ export default function NavBar() {
     }
 
 
-    return (
-        
 
-   
+
+    return (
+
+
+
         <div className='padding__ '>
 
-           
+
+
 
             <nav className='flex flex-row align-items flex-wrap margin-top2'>
-               
-               <a href='/' className='Telefon_link'>
-               <h2 className='firstClass font-weight margin-left cursor'> {TheName}</h2>
-               </a>
+
+                <a href='/' className='Telefon_link'>
+                    <h2 className='firstClass font-weight margin-left cursor'> {TheName}</h2>
+                </a>
 
                 <div onClick={Change} className='widthbar flex  flex-row align-items' >
                     <div className={css.menubar}  >
@@ -66,6 +69,6 @@ export default function NavBar() {
 
 
         </div>
-       
+
     )
 }

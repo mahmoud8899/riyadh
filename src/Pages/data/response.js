@@ -7,7 +7,7 @@ import Title__ from '../../Icons/rr.png'
 
 
 // the name of website
-export const TheName = 'خدمات بالرياض'
+export const TheName = 'الصبر'
 
 
 export const PageTitle = {

@@ -12,7 +12,7 @@ export default function TheAboutUs() {
             <div className='margin-bottom'>
                 <h2 className=''>{AboutUs.title}</h2>
 
-                <div className='text-align margin-topone'>
+                <div className=' margin-topone'>
                     <p className='font-size cursor' >
                         {AboutUs.des}
                     </p>
