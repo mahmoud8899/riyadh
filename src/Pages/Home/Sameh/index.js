@@ -6,6 +6,8 @@ import Calling from '../../../Icons/calling.png'
 import MetaDecorator from '../../Screen/Title'
 import { TheSite } from '../../data/response'
 import TheCalling from '../../Screen/Calling'
+import TheLoading from '../../Screen/TheLoading'
+import TheFooter from '../../Footer'
 
 
 
@@ -120,6 +122,16 @@ const IsSameh = () => {
 
 
             <Services />
+
+
+
+            <React.Suspense fallback={<TheLoading />} >
+                <TheFooter
+                    Linkinstagram={Info__.instgram}
+                    linkwhatApp={Info__.whatApp}
+                />
+            </React.Suspense>
+
 
 
 

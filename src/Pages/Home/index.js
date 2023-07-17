@@ -5,7 +5,8 @@ import TheAboutUs from './AboutUs'
 import MetaDecorator from '../Screen/Title/index'
 import { HomeSlider, IemdTitle, PageTitle, TheSite } from '../data/response'
 import TheCalling from '../Screen/Calling/index'
-import IsSameh from './Sameh'
+import TheFooter from '../Footer/index'
+import TheLoading from '../Screen/TheLoading'
 
 
 export default function Home() {
@@ -64,6 +65,13 @@ export default function Home() {
             />
 
             <Home />
+
+            <React.Suspense fallback={<TheLoading />} >
+                <TheFooter
+                    Linkinstagram='https://instagram.com/najar_n0'
+                    linkwhatApp={HomeSlider.whatApp}
+                />
+            </React.Suspense>
 
 
 

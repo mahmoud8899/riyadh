@@ -7,28 +7,29 @@ import MyImage from '../Screen/Images/index'
 import { TheName } from '../data/response'
 
 
-export default function TheFooter() {
+export default function TheFooter(props) {
+
+    const  {
+
+        Linkinstagram,
+        linkwhatApp
+
+    } = props
 
 
 
     const FooterLinke = [
         {
-            _id: 1,
-            image: facebook,
-            name: 'facebook',
-            link: 'https://www.facebook.com/profile.php?id=100092699676341&mibextid=ZbWKwL',
-        },
-        {
             _id: 2,
             image: instagram,
             name: 'instagram',
-            link: 'https://www.instagram.com/atefsmair1994/',
+            link: Linkinstagram,
         },
         {
             _id: 3,
             image: whatapp,
             name: 'whatapp',
-            link: 'https://wa.me/+966568970473',
+            link: `https://wa.me/${linkwhatApp}`,
         }
 
     ]

@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react'
 const NavBar = React.lazy(() => import('./Pages/NavBar'))
-const TheCalling = React.lazy(() => import('./Pages/Screen/Calling'))
-const TheFooter = React.lazy(() => import('./Pages/Footer'))
 import TheLoading from './Pages/Screen/TheLoading'
 import { Outlet } from 'react-router-dom'
 import PropTypes from 'prop-types'
@@ -32,9 +30,7 @@ const App = ({ route }) => {
             <Outlet />
 
 
-            <React.Suspense  fallback={<TheLoading   />} >
-                <TheFooter />
-            </React.Suspense>
+         
 
         </Fragment>
     )
