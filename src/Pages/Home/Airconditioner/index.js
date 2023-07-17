@@ -4,6 +4,7 @@ import AirConda from '../../../Icons/mok/1.jpeg'
 import TheCalling from '../../Screen/Calling'
 import MyImage from '../../Screen/Images'
 import Air_x from '../../../Icons/mok/3.jpeg'
+import { TheSite } from '../../data/response'
 
 
 const Airconditioner = () => {
@@ -67,7 +68,7 @@ const Airconditioner = () => {
     return (
         <>
             <MetaDecorator
-                title={InfoX.title}
+                title={`${InfoX.title} - ${TheSite}`}
                 description={InfoX.desx}
                 imageUrl={AirConda}
                 imageAlt={InfoX.title}

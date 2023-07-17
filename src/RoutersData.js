@@ -1,14 +1,11 @@
 import React from 'react'
 import App from './App'
 import TheLoading from './Pages/Screen/TheLoading'
-import Services from './Pages/Home/Services'
 const Home = React.lazy(() => import('./Pages/Home'))
 const Airconditioner = React.lazy(() => import('./Pages/Home/Airconditioner/index'))
 const TheTransfer = React.lazy(() => import('./Pages/Home/Transfer/index'))
-const TheMpas = React.lazy(() => import('./Pages/Home/TheMpas'))
-const Title = React.lazy(() => import('./Pages/Screen/Title/index'))
-import Imagesd from './Icons/services/asas.jpeg'
-import LastWork from './Icons/lastworking/7.jpeg'
+const TheSameh = React.lazy(() => import('./Pages/Home/Sameh/index'))
+
 
 
 export const RoutersArray = [
@@ -84,6 +81,28 @@ export const RoutersArray = [
 
 
             },
+
+            {
+                element: <React.Suspense
+                    fallback={
+                        <div className='devloading'>
+                            <TheLoading />
+                        </div>
+                    }
+                >
+
+                    <TheSameh  />
+
+
+                </React.Suspense>,
+                path: '/نجار-موبيليا/',
+
+
+
+            },
+
+
+            
 
 
 

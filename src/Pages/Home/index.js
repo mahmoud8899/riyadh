@@ -3,8 +3,9 @@ import Services from './Services'
 import FirstSlider from './Slider'
 import TheAboutUs from './AboutUs'
 import MetaDecorator from '../Screen/Title/index'
-import { HomeSlider, PageTitle } from '../data/response'
+import { HomeSlider, IemdTitle, PageTitle, TheSite } from '../data/response'
 import TheCalling from '../Screen/Calling/index'
+import IsSameh from './Sameh'
 
 
 export default function Home() {
@@ -45,13 +46,12 @@ export default function Home() {
 
 
 
-    let title = `نجار للديكور الخشبي `
 
     return (
         <Fragment>
 
             <MetaDecorator
-                title={title}
+                title={`${IemdTitle} - ${TheSite}`}
                 description={PageTitle.des}
                 imageUrl={PageTitle.image}
                 imageAlt={PageTitle.title}
